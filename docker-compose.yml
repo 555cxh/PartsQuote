@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  # 第一个服务：unet（Python 3.8 环境）
+  unet:
+    build: /srv/partquote/unet_api  # 指向 unet_api 目录（包含其 Dockerfile）
+    container_name: unet_service    # 容器名称，方便识别
+    ports:
+      - "5000:5000"                 # 宿主机端口:容器端口（外部访问用5000）
+    restart: always                 # 容器意外停止时自动重启
+    environment:
+      - FLASK_ENV=production        # 生产环境模式
+
+  # 第二个服务：ragflow_agent（Python 3.12 环境）
+  ragflow_agent:
+    build: /srv/partquote/ragflow_agent_api  # 替换为 ragflow_agent_api 实际目录
+    container_name: ragflow_agent_service
+    ports:
+      - "5001:5001"                   # 用5001端口，避免与第一个服务冲突
+    restart: always
+    environment:
+      - FLASK_ENV=production

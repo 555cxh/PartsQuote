@@ -1,0 +1,25 @@
+# 核心SDK（代码明确导入）
+ragflow-sdk==0.20.0
+
+# Web框架（Flask及依赖）
+flask==3.1.1
+werkzeug==3.1.3
+itsdangerous==2.2.0
+jinja2==3.1.6
+click==8.2.1
+
+# 网络请求与编码
+requests==2.32.4
+urllib3==2.5.0
+charset-normalizer==3.4.2
+idna==3.10
+certifi==2025.8.3
+
+# 数据处理与工具
+json5==0.9.25  # 处理JSON（隐含依赖）
+collections-extended==2.0.2  # 扩展OrderedDict支持
+colorama==0.4.6  # 终端颜色（Windows兼容）
+
+# 其他必要依赖
+blinker==1.9.0  # Flask信号处理
+markupsafe==3.0.2  # Jinja2模板依赖
