@@ -7,9 +7,11 @@
 docker-compose.yml已在项目根目录下给出
 
 只给出了后端文件，前端是同事做的，就不放了。
+里面所调用的大模型api请自行添加，rag所使用的agent已给出。
 
 ![上传图片](https://raw.githubusercontent.com/555cxh/PartsQuote/main/show/Snipaste_2025-08-15_11-02-23.png)
 ![零件参数确认](https://raw.githubusercontent.com/555cxh/PartsQuote/main/show/Snipaste_2025-08-15_11-02-58.png)
 ![零件工艺确认](https://raw.githubusercontent.com/555cxh/PartsQuote/main/show/Snipaste_2025-08-15_11-03-19.png)
 ![零件工艺核价](https://raw.githubusercontent.com/555cxh/PartsQuote/main/show/Snipaste_2025-08-15_11-03-35.png)
+
 
