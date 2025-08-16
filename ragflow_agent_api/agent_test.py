@@ -51,9 +51,9 @@ def get_agent_answer():
 
         # 调用Agent获取回答
         answer = ragflow_agent_query(
-            api_key= "ragflow-M0YWE1MTQ4NzdmMDExZjA4NzcxMDI0Mm",
-            base_url= "http://60.12.208.134",
-            agent_id= "f55bbcc077ef11f0bd8e0242c0a82007",
+            api_key= "",
+            base_url= "",
+            agent_id= "",
             question=question
         )
 
